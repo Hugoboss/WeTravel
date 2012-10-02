@@ -21,10 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Menu"
+            android:name=".Hoofdmenu"
             android:label="@string/title_activity_main" >
             <intent-filter>
-                <action android:name="project56.wetravel.hogeschool.MENU" />
+                <action android:name="project56.wetravel.hogeschool.hoofdmenu" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

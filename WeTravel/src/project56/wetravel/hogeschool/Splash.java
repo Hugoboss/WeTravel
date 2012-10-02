@@ -1,5 +1,7 @@
 package project56.wetravel.hogeschool;
 
+import project56.wetravel.hogeschool.R;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +17,7 @@ public class Splash extends Activity {
         	public void run(){
         		try{
         			sleep(5000);
-        			Intent menuIntent = new Intent("project56.wetravel.hogeschool.MENU");
+        			Intent menuIntent = new Intent(Splash.this, Hoofdmenu.class);
         			startActivity(menuIntent);
         		} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
