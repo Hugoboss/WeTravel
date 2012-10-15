@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Hoofdmenu extends Activity {
 
@@ -15,16 +16,16 @@ public class Hoofdmenu extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hoofdmenu);
-		addListenerOnButton();
-		addListenerOnButton2();
-		addListenerOnButton3();
+		addListenerOnImageView();
+		addListenerOnImageView2();
+		addListenerOnImageView3();
 	}
 
-	public void addListenerOnButton() {
+	public void addListenerOnImageView() {
 
-		button = (Button) findViewById(R.id.inloggen);
+		ImageView iv = (ImageView) findViewById(R.id.inloggen);
 
-		button.setOnClickListener(new OnClickListener() {
+		iv.setOnClickListener(new OnClickListener() {
 
 			
 			public void onClick(View arg0) {
@@ -36,13 +37,13 @@ public class Hoofdmenu extends Activity {
 
 	}
 	
-	public void addListenerOnButton2() {
+	public void addListenerOnImageView2() {
 
 		
 
-		button = (Button) findViewById(R.id.registreren);
+		ImageView iv = (ImageView) findViewById(R.id.registreren);
 
-		button.setOnClickListener(new OnClickListener() {
+		iv.setOnClickListener(new OnClickListener() {
 
 			
 			public void onClick(View arg0) {
@@ -55,13 +56,13 @@ public class Hoofdmenu extends Activity {
 	}
 	
 	
-	public void addListenerOnButton3() {
+	public void addListenerOnImageView3() {
 
 		
 
-		button = (Button) findViewById(R.id.informatie);
+		ImageView iv = (ImageView) findViewById(R.id.informatie);
 
-		button.setOnClickListener(new OnClickListener() {
+		iv.setOnClickListener(new OnClickListener() {
 
 			
 			public void onClick(View arg0) {
